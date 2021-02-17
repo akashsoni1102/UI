@@ -1,0 +1,22 @@
+
+
+.container{
+
+    border: 2px solid black;
+    padding:30px;
+    width: 450px;
+    border-radius: 20px;
+    margin-top: 50px;
+
+}
+.container table td{
+
+    padding: 10px;
+
+}
+
+.container button{
+    width: 100%;
+}
+
+

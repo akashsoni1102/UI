@@ -1,0 +1,19 @@
+ul li{
+    list-style: none;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    padding: 10px;
+    padding-right: 15px;
+    float: right;
+    cursor: pointer;
+}
+ul li:hover{
+    color: lime;
+}
+ul li i{
+    padding:5px;
+}
+ul{
+    padding-right: 40px;
+}

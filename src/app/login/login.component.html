@@ -1,0 +1,40 @@
+
+
+<div class="container">
+    <form>
+        
+<table>
+    <tr>
+        
+            <th colspan="2">
+                <i class="fa fa-address-book" style="color: black;font-size: 25px;padding-right: 10px;" aria-hidden="true"></i> 
+                <label style="font-size: 25px;">Loan Management System</label>
+                
+            </th>
+    </tr>
+    <tr><td>
+        <label for="username">USERID</label>
+    </td><td>
+        <input type="text" id="username" #name="ngModel" class="form-control" name="username" required [(ngModel)]="username"/>
+        <div *ngIf="!name && name.touched" >
+            Username is Required
+        </div>
+    </td></tr>
+    <tr><td>
+        <label for="password">PASSWORD</label>
+    </td><td>
+        <input type="text" class="form-control" id="password" name="password" [(ngModel)]="password"/>
+    </td></tr>
+<tr><td colspan="2">
+    <button [disabled]="!(username && password)" class="btn btn-primary" (click)="print()"><i class="fa fa-sign-in" aria-hidden="true"></i>  Login</button>
+</td></tr>
+<tr>
+    <td colspan="2">
+        <span *ngIf="msg" class="alert alert-danger">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+        {{msg}}
+        </span></td>
+</tr>
+</table>
+</form>
+</div>
