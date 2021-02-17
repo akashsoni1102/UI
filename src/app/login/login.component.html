@@ -16,9 +16,7 @@
         <label for="username">USERID</label>
     </td><td>
         <input type="text" id="username" #name="ngModel" class="form-control" name="username" required [(ngModel)]="username"/>
-        <div *ngIf="!name && name.touched" >
-            Username is Required
-        </div>
+        
     </td></tr>
     <tr><td>
         <label for="password">PASSWORD</label>
@@ -26,7 +24,7 @@
         <input type="text" class="form-control" id="password" name="password" [(ngModel)]="password"/>
     </td></tr>
 <tr><td colspan="2">
-    <button [disabled]="!(username && password)" class="btn btn-primary" (click)="print()"><i class="fa fa-sign-in" aria-hidden="true"></i>  Login</button>
+    <button [disabled]="!(username && password)" class="btn btn-primary" (click)="validate()"><i class="fa fa-sign-in" aria-hidden="true"></i>  Login</button>
 </td></tr>
 <tr>
     <td colspan="2">

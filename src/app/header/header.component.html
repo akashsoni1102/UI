@@ -3,9 +3,9 @@
 <div class="col col-lg-12">
 <ul style="color: aliceblue;">
 
-<li><i class="fa fa-sign-out" style="color:darkorange" aria-hidden="true"></i>Logout</li>
-<li><i class="fa fa-home" style="color: darkkhaki;" aria-hidden="true"></i>Home</li>
-<li><i class="fa fa-user-circle" style="color: yellowgreen;" aria-hidden="true"></i>USER</li>
+<li><i class="fa fa-sign-out" style="color:darkorange" aria-hidden="true"></i><a href="#" (click)="logout()">Logout</a></li>
+<li><i class="fa fa-home" style="color: darkkhaki;" aria-hidden="true"></i><a routerLink="/home">Home</a></li>
+<li><i class="fa fa-user-circle" style="color: yellowgreen;" aria-hidden="true"></i>{{username}}</li>
 
 </ul>
 </div>
